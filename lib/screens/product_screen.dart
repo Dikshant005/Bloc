@@ -15,10 +15,7 @@ class ProductScreen extends StatelessWidget {
     context.read<ProductBloc>().add(FetchProducts());
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Products'),
-        backgroundColor: Colors.green,
-      ),
+      backgroundColor:Colors.teal[50],
       body: BlocBuilder<ProductBloc, ProductState>(
         builder: (context, state) {
           if (state is ProductLoading) {

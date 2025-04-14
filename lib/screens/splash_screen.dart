@@ -23,8 +23,11 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: Colors.green.shade900,
       body: Center(
         child: Image.asset(
-          'assets/logo/logo.jpg', // Make sure this image exists in your assets folder
-          height: 150,
+          'assets/logo/logo1.jpg',
+          height: double.infinity,
+          
+           fit: BoxFit.cover,
+           
         ),
       ),
     );

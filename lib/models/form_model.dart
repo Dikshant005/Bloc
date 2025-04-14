@@ -1,7 +1,4 @@
-// form_event.dart
-abstract class FormEvent {}
-
-class SubmitFormEvent extends FormEvent {
+class FormData {
   final String name;
   final String email;
   final String phone;
@@ -10,7 +7,7 @@ class SubmitFormEvent extends FormEvent {
   final String state;
   final String city;
 
-  SubmitFormEvent({
+  FormData({
     required this.name,
     required this.email,
     required this.phone,

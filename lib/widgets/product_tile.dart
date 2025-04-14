@@ -26,7 +26,6 @@ class ProductTile extends StatelessWidget {
               fit: BoxFit.contain,
             ),
           ),
-          // Title
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
             child: Text(

@@ -70,7 +70,7 @@ class ProductDetailScreen extends StatelessWidget {
               ),
             ),
 
-            // Add to Cart / Buy Buttons (optional)
+            // Add to Cart / Buy Buttons 
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(

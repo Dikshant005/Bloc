@@ -8,15 +8,13 @@ class AudioBloc extends Bloc<custom_audio_event.AudioEvent, AudioState> {
 
   AudioBloc() : super(AudioInitial()) {
     on<custom_audio_event.PlayAudio>((event, emit) async {
-      final assetPath = 'assets/audio/sample.mp3';
-      print("Attempting to play audio from: $assetPath");
+      final assetPath = 'assets/audio/sample-15s (1).mp3';
       
       try {
         await _player.play(AssetSource(assetPath));
         emit(AudioPlaying());
       } catch (e) {
-        print("Error while playing audio: $e");
-        emit(AudioStopped()); // Optional: emit an error state
+        emit(AudioStopped()); 
       }
     });
 
