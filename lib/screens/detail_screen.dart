@@ -10,6 +10,7 @@ class ProductDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(product.title),
         backgroundColor: Colors.green.shade700,
@@ -88,7 +89,9 @@ class ProductDetailScreen extends StatelessWidget {
                       },
                       child: const Text(
                         'Add to Cart',
-                        style: TextStyle(fontSize: 16),
+                        style: TextStyle(fontSize: 16,
+                        color: Colors.white),
+                        
                       ),
                     ),
                   ),

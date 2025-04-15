@@ -8,7 +8,7 @@ class AudioBloc extends Bloc<custom_audio_event.AudioEvent, AudioState> {
 
   AudioBloc() : super(AudioInitial()) {
     on<custom_audio_event.PlayAudio>((event, emit) async {
-      final assetPath = 'assets/audio/sample-15s (1).mp3';
+      final assetPath = 'audio/sample.mp3';
       
       try {
         await _player.play(AssetSource(assetPath));
